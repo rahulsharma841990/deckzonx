@@ -2,7 +2,7 @@
         <div data-scrollable>
             <div class="sidebar-block">
                 <div class="profile">
-                    <img src="<?php echo base_url()?>site/images/people/110/guy-6.jpg" alt="people" class="img-circle" />
+                    <img src="<?php echo base_url()?>site/images/userprofile/<?php echo $profile->profile_pic; ?>" alt="people" class="img-circle" />
                     <h4>Adrian D.</h4>
                 </div>
             </div>

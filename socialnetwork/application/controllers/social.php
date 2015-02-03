@@ -5,14 +5,14 @@ class social extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->helper('url');
-		
+		$this->load->model('social_model');
 	}
 
 
 	public function index()
 	{
-		$this->load->view('social/template');
-			
+		$data['profile']=$this->social_model->get_user_profile();
+		$this->load->view('social/template',$data);
 	}
 	
 	
